@@ -61,3 +61,18 @@ desktop.ini
 
 # ---------- Docker ----------
 *.env.docker
+
+# ---------- Backend specific ----------
+backend/venv/
+backend/.env
+backend/db.sqlite3
+backend/debug.log
+backend/media/
+backend/staticfiles/
+
+# ---------- Frontend specific ----------
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.env
+Frontend/.env.*
+!Frontend/.env.example
