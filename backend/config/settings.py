@@ -123,6 +123,8 @@ else:
         'CORS_ALLOWED_ORIGINS',
         default='http://localhost:5173,http://localhost:3000'
     ).split(',')
+# ---------- CROSS ORIGIN OPENER POLICY ----------
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
 # ---------- REST FRAMEWORK ----------
 REST_FRAMEWORK = {
