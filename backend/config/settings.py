@@ -116,13 +116,11 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # ---------- CORS ----------
-if DEBUG:
-    CORS_ALLOW_ALL_ORIGINS = True
-else:
-    CORS_ALLOWED_ORIGINS = config(
-        'CORS_ALLOWED_ORIGINS',
-        default='http://localhost:5173,http://localhost:3000'
-    ).split(',')
+CORS_ALLOWED_ORIGINS = config(
+    'CORS_ALLOWED_ORIGINS',
+    default='http://localhost:5173,http://localhost:3000'
+).split(',')
+CORS_ALLOW_ALL_ORIGINS = False
 # ---------- CROSS ORIGIN OPENER POLICY ----------
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
