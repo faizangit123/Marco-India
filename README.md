@@ -212,5 +212,3 @@ JWT-based authentication with automatic token refresh:
 🌐 [marcoindia.in](https://marcoindia.in)
 
 ---
-
-*Built with ❤️ using React & Vite*
