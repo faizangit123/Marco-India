@@ -56,26 +56,22 @@ class LoginView(APIView):
     def post(self, request):
         serializer = LoginSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        user = authenticate(
-            request,
-            username=serializer.validated_data['email'].lower(),
-            password=serializer.validated_data['password'],
-        )
-        if not user:
-            return Response(
-                {'detail': 'Invalid email or password.'},
-                status=status.HTTP_401_UNAUTHORIZED,
-            )
+        email = serializer.validated_data['email'].lower()
+        password = serializer.validated_data['password']
+
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
+            return Response({'detail': 'Invalid email or password.'}, status=status.HTTP_401_UNAUTHORIZED)
+
+        if not user.check_password(password):
+            return Response({'detail': 'Invalid email or password.'}, status=status.HTTP_401_UNAUTHORIZED)
+
         if not user.is_active:
-            return Response(
-                {'detail': 'Account is deactivated. Contact support.'},
-                status=status.HTTP_403_FORBIDDEN,
-            )
+            return Response({'detail': 'Account is deactivated. Contact support.'}, status=status.HTTP_403_FORBIDDEN)
+
         tokens = get_tokens_for_user(user)
-        return Response({
-            **tokens,
-            'user': UserSerializer(user).data,
-        })
+        return Response({**tokens, 'user': UserSerializer(user).data})
 
 
 class LogoutView(APIView):
