@@ -9,6 +9,24 @@ A modern, responsive business website for **Marco India**, a professional CCTV s
 
 ---
 
+## 🌐 Live Demo
+
+| Service | URL |
+|---------|-----|
+| **Frontend** | https://skill-sync-sage-nu.vercel.app/ |
+
+---
+
+**SCREENSHOT**
+
+<img width="1909" height="1077" alt="image" src="https://github.com/user-attachments/assets/3a179c4b-d0f8-43cc-9503-32cb6708bda3" />
+
+<img width="1919" height="1075" alt="image" src="https://github.com/user-attachments/assets/c35cb71b-8d2f-4fec-828d-5c55b763041c" />
+
+<img width="1904" height="1054" alt="image" src="https://github.com/user-attachments/assets/2aecf83c-5a66-4c58-985f-036844e1246e" />
+
+
+
 ## 🚀 Features
 
 - **Responsive Design** — Fully mobile-first layout with smooth animations
