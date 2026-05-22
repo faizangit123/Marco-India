@@ -13,7 +13,7 @@ A modern, responsive business website for **Marco India**, a professional CCTV s
 
 | Service | URL |
 |---------|-----|
-| **Frontend** | https://skill-sync-sage-nu.vercel.app/ |
+| **Frontend** | [https://skill-sync-sage-nu.vercel.app/](https://marco-india.vercel.app/) |
 
 ---
 
