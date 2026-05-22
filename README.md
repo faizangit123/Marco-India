@@ -225,7 +225,7 @@ JWT-based authentication with automatic token refresh:
 ## 📞 Contact
 
 **Marco India**  
-📍 Sector 62, Noida, Uttar Pradesh 201301, India  
+📍 ROAD no-8 Jawahar Nagar Mango Jamshedpur, Jharkhand-831012, India  
 📧 info@marcoindia.in  
 🌐 [marcoindia.in](https://marcoindia.in)
 
